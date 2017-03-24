@@ -7,7 +7,9 @@
 var UI = require('ui');
 var ajax = require('ajax');
 
-var myAPIKey = '3689569639';
+var config = JSON.parse(require('./config.json'));
+
+var myAPIKey = config.apiKey;
 var myUserID = '1';
 var url = 'https://home.eiselecloud.de/freistunde/api.php' +
           '?appid=' + myAPIKey;
